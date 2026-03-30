@@ -34,7 +34,9 @@ The minimal starter-pack, IMO, is the **clojure** plugin, the **clojure** instru
 > [!NOTE]
 > Plugins contain agents and skills. Both types of content are lazy loaded by the agent, so they will not hurt your agents context window just by being there. They will only add some little description so that the agent knows when to load them.
 
-Instructions and prompts have install buttons in the rendered markdown from this site. You can of course just copy the content of anything you want on your machine(s) from this repo and configure manually in VS Code.
+Instructions and prompts have install buttons in the rendered markdown from this site. (I recommend consolidating all Copilot config to `~/.copilot/`, but that's me.)
+
+You can of course just copy the content of anything you want on your machine(s) from this repo and configure manually in VS Code.
 
 ## Plugins
 
