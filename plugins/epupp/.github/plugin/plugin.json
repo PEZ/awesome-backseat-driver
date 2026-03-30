@@ -1,0 +1,12 @@
+{
+  "name" : "epupp",
+  "description" : "Browser tampering and userscript development with Epupp (ClojureScript/Scittle in the browser).",
+  "version" : "0.1.0",
+  "keywords" : [ "clojure", "repl", "interactive-programming", "calva", "backseat-driver" ],
+  "author" : {
+    "name" : "BetterThanTomorrow"
+  },
+  "repository" : "https://github.com/BetterThanTomorrow/awesome-backseat-driver",
+  "license" : "MIT",
+  "skills" : [ "./skills/epupp" ]
+}

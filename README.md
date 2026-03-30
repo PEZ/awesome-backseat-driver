@@ -20,7 +20,11 @@ Or add to your settings:
 
 | Plugin | Description |
 |---|---|
-| `clojure-interactive-programming` | REPL-first Clojure agent and skills |
+| `clojure` | REPL-first Clojure development — agent and skill for any dialect and runtime |
+| `clojure-editor` | Subagent for editing Clojure files using Backseat Driver structural editing tools |
+| `babashka` | Babashka scripting and bb.edn task skills for idiomatic Babashka development |
+| `joyride` | Joyride skills for VS Code automation with ClojureScript — scripting, user scripts, and workspace automation |
+| `epupp` | Browser tampering and userscript development with Epupp (ClojureScript/Scittle in the browser) |
 
 ## Relationship to Calva Backseat Driver
 
