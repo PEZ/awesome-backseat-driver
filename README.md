@@ -1,4 +1,4 @@
-# Awesome  Backseat Driver
+# Awesome Backseat Driver [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 Plugin marketplace for Clojure AI context in GitHub Copilot — agents, skills, and workflows for REPL-first interactive programming with [Calva Backseat Driver](https://github.com/BetterThanTomorrow/calva-backseat-driver).
 
