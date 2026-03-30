@@ -7,13 +7,13 @@ Plugin marketplace for Clojure AI context in GitHub Copilot — agents, skills, 
 To make sense of what the content of this repository offers, you may want to check out some of these resources:
 
 - [Overview](https://code.visualstudio.com/docs/copilot/customization/overview)
-- [Customization concepts](https://code.visualstudio.com/docs/copilot/concepts/customization)
+| [Customization concepts](https://code.visualstudio.com/docs/copilot/concepts/customization)
 - [Custom instructions](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
-- [Prompt files](https://code.visualstudio.com/docs/copilot/customization/prompt-files)
-- [Custom agents](https://code.visualstudio.com/docs/copilot/customization/custom-agents)
-- [Agent skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
-- [Agent plugins](https://code.visualstudio.com/docs/copilot/customization/agent-plugins)
-- [Troubleshooting](https://code.visualstudio.com/docs/copilot/troubleshooting)
+| [Prompt files](https://code.visualstudio.com/docs/copilot/customization/prompt-files)
+| [Custom agents](https://code.visualstudio.com/docs/copilot/customization/custom-agents)
+| [Agent skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+| [Agent plugins](https://code.visualstudio.com/docs/copilot/customization/agent-plugins)
+| [Troubleshooting](https://code.visualstudio.com/docs/copilot/troubleshooting)
 
 ## Install
 
