@@ -4,17 +4,26 @@ Plugin marketplace for Clojure AI context in GitHub Copilot — agents, skills, 
 
 ## Install
 
-In VS Code, run **Chat: Install Plugin From Source** and enter:
+To install the **clojure** plugin:
 
-```
-https://github.com/BetterThanTomorrow/awesome-backseat-driver
-```
+1. Install/configure **Awesome Backseat Driver** as a provider of plugins:
+  1. From the VS Code command palette: **Chat: Install Plugin from Source**
+  1. Paste: https://github.com/BetterThanTomorrow/awesome-backseat-driver
+1. Installing plugins:
+  1. From the VS Code command palette: **Chat: Plugins**
+  1. Append plugin name in the search box, e.g. **clojure**
+  1. Click **Install**
 
-Or add to your settings:
+Instructions and prompts have install buttons in the rednered markdown from this site.
 
-```json
-"chat.plugins.marketplaces": ["https://github.com/BetterThanTomorrow/awesome-backseat-driver"]
-```
+Or copy the content and configure manually in VS Code.
+
+The minimal starter-pack, IMO, is the **clojure** plugin, the **clojure** instructions, and the **clojure-editor** subagent. There is some cross-referencing going on between these.
+
+> [!NOTE]
+> Plugins contain agents and skills. Both types of content are lazy loaded by the agent, so they will not hurt your agents context window just by being there. They will only add some little description so that the agent knows when to load them.
+
+Also IMO, you need the **babashka**, **joyride**, and **epupp**, plugins.
 
 ## Plugins
 
@@ -24,7 +33,7 @@ Or add to your settings:
 | `clojure-editor` | Subagent for editing Clojure files using Backseat Driver structural editing tools |
 | `babashka` | Babashka scripting and bb.edn task skills for idiomatic Babashka development |
 | `joyride` | Joyride skills for VS Code automation with ClojureScript — scripting, user scripts, and workspace automation |
-| `epupp` | Browser tampering and userscript development with Epupp (ClojureScript/Scittle in the browser) |
+| `epupp` | Browser tampering and userscript development with Epupp, ClojureScript/Scittle in any browser page you need it. (Which in my case is all the pages!) |
 
 ## Instructions
 
@@ -47,6 +56,12 @@ This marketplace (as the Copilot team terms it) provides
 
 This repo will mature both in terms of its content and structure. Right now it is very raw and maybe not the easiest to contribute to (and certainly not to maintain).
 
-## License
+## License 🍻🗽
 
-MIT
+[MIT](LICENSE.txt)
+
+## Please sponsor my open source work ♥️
+
+You are welcome to encourage my work, using this link:
+
+* https://github.com/sponsors/PEZ
