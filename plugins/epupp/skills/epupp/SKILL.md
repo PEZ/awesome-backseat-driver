@@ -1,6 +1,6 @@
 ---
 name: epupp
-description: "**BROWSER TAMPERING SKILL** — Live tamper with web pages and write userscripts using Epupp (ClojureScript/Scittle in the browser). USE FOR: REPL-driven page inspection and modification, userscript development with manifests, DOM querying and mutation, injecting UI with Replicant/Reagent, async data fetching, troubleshooting Epupp connections."
+description: "**BROWSER TAMPERING SKILL** — Live tamper with web pages and write userscripts using Epupp (ClojureScript/Scittle in the browser). USE FOR: All Epupp-related tasks and when using Backseat Driver tools with Epupp."
 ---
 
 # Epupp Assistant
@@ -320,21 +320,24 @@ Key points:
 
 ## REPL Pitfalls
 
-### Navigation Hangs the REPL
+### Non-SPA Sites: Defer Navigation with `setTimeout`
 
-Setting `js/window.location` from a REPL eval tears down the page and its REPL. The eval never returns — the connection hangs.
-
-**Fix: defer navigation with `setTimeout`:**
+On non-SPA sites, navigation that reloads the page (location change, form submit, link click) tears down the REPL mid-eval. Wrap in `setTimeout` so the eval returns before the page unloads:
 
 ```clojure
-;; BAD — eval never completes, connection hangs
-(set! (.-location js/window) "https://example.com/page")
-
-;; GOOD — returns immediately, navigates after response completes
 (js/setTimeout
   #(set! (.-location js/window) "https://example.com/page")
   50)
+
+;; Form submissions are navigation too
+(js/setTimeout
+  #(.submit (js/document.getElementById "menuform"))
+  50)
 ```
+
+**Non-SPA navigation workflow:** defer with `setTimeout` → wait for reload → `clojure_list_sessions` until session reappears → evaluate on new page. Each navigation is a hard boundary — never chain navigation + evaluation in one step.
+
+SPA client-side routing does not reload the page, so this does not apply there.
 
 ### Clipboard Access Blocked
 

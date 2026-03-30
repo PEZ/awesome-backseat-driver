@@ -1,6 +1,6 @@
 ---
 name: clojure
-description: 'Clojure development skill — any dialect, any runtime. Use for all Clojure work: planning, reading, reviewing, designing, coding, debugging, testing, refactoring. Use whenever you are useing Backseat Driver tools.'
+description: 'Clojure development skill — any dialect, any runtime. Use for all Clojure work, regardless of dialect or runtime: planning, reading, reviewing, designing, coding, debugging, testing, refactoring. Use whenever you are using Backseat Driver tools.'
 ---
 
 # Clojure Skill

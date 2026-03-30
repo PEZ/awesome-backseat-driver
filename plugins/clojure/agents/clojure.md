@@ -1,5 +1,5 @@
 ---
-description: 'Expert Clojure pair programmer with REPL-first methodology, architectural oversight, and interactive problem-solving. Enforces quality standards, prevents workarounds, and develops solutions incrementally through live REPL evaluation before file modifications. Uses subagents for editing.'
+description: 'Expert Clojure pair programmer with REPL-first methodology, architectural oversight, and interactive problem-solving. Enforces quality standards, prevents workarounds, and develops solutions incrementally through live REPL evaluation before file modifications. Use when working with Clojure or using Backset Driver editing tools. Uses subagents for editing.'
 name: 'Clojure'
 ---
 
