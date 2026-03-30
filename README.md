@@ -2,6 +2,19 @@
 
 Plugin marketplace for Clojure AI context in GitHub Copilot — agents, skills, and workflows for REPL-first interactive programming with [Calva Backseat Driver](https://github.com/BetterThanTomorrow/calva-backseat-driver).
 
+## VS Code Copilot Customization Docs
+
+To make sense of what the content of this repository offers, you may want to check out some of these resources:
+
+- [Overview](https://code.visualstudio.com/docs/copilot/customization/overview)
+- [Customization concepts](https://code.visualstudio.com/docs/copilot/concepts/customization)
+- [Custom instructions](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
+- [Prompt files](https://code.visualstudio.com/docs/copilot/customization/prompt-files)
+- [Custom agents](https://code.visualstudio.com/docs/copilot/customization/custom-agents)
+- [Agent skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+- [Agent plugins](https://code.visualstudio.com/docs/copilot/customization/agent-plugins)
+- [Troubleshooting](https://code.visualstudio.com/docs/copilot/troubleshooting)
+
 ## Install
 
 To install the Marketplace and the **clojure** plugin:
