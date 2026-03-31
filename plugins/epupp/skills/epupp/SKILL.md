@@ -208,6 +208,12 @@ When REPL is connected, read operations are always available. Write operations r
 (epupp.fs/rm! ["script1.cljs" "script2.cljs"])       ; bulk delete
 ```
 
+### FS REPL Sync Workflow
+
+FS REPL Sync resets on every page navigation or reload (by design). After triggering a reload via REPL, `epupp.fs/save!`, `bb upload`, `epupp.fs/mv!`, and `epupp.fs/rm!` will fail until the user re-enables sync.
+
+Before any FS write operation: ask the user whether FS REPL Sync is enabled for the target relay port. If a write fails with "FS REPL Sync is not enabled", ask the user to enable it in Epupp settings — do not attempt workarounds.
+
 ## Async/Await
 
 Scittle supports native async/await:
